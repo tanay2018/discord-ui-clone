@@ -1,0 +1,134 @@
+.hero-container {
+  max-width: 100%;
+  position: relative;
+  min-height: 550px;
+  background-color: #404eed;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Assets/heroright.png"), url("./Assets/heroleft.png"),
+    url("./Assets/heroclouds.png");
+  background-repeat: no-repeat;
+  background-position: left 1400px bottom, right 1350px bottom, -400px -75px;
+  background-size: auto, auto, auto;
+}
+
+.heroclouds {
+  position: absolute;
+  display: inline-block;
+  left: -250px;
+  top: -120px;
+  object-fit: contain;
+  transform: scale(1.3, 1.3);
+}
+
+.heroleft {
+  object-position: 30px 250px;
+}
+
+.heroright {
+  position: absolute;
+  right: -100px;
+  top: 187px;
+  background-position: fixed;
+}
+
+.herodata h1 {
+  font-weight: 1000;
+  font-size: min(6.5vw, 60px);
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 95%;
+  text-transform: uppercase;
+  text-rendering: geometricPrecision;
+}
+
+.herodata p {
+  display: flex;
+  width: auto;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 1.625;
+  font-size: min(15px, 2.8vw);
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.herodata {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  color: #ffff;
+}
+
+.buttons {
+  display: flex;
+  max-width: 700px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.buttons .download {
+  color: black;
+  height: 55px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  width: auto;
+  padding: 10px 25px 10px 25px;
+}
+
+.buttons .browser {
+  color: #ffff;
+  height: 55px;
+  width: auto;
+  background-color: rgb(40, 39, 39);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 25px 10px 25px;
+}
+.buttons .browser:active,
+.download:active {
+  transform: scale(0.98);
+}
+
+.buttons .browser:hover {
+  opacity: 0.9;
+}
+.buttons .download:hover {
+  color: blue;
+}
+
+@media screen and (max-width: 698px) {
+  .herodata {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    padding: 60px 0px 0px 20px;
+  }
+
+  .herodata p {
+    text-align: left;
+  }
+
+  .hero-container {
+    justify-content: baseline;
+    align-items: baseline;
+    background-position: left 1400px bottom, left -200px bottom, -400px bottom;
+    height: 700px;
+  }
+}
