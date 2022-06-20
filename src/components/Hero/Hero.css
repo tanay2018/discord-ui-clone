@@ -10,7 +10,7 @@
   background-image: url("./Assets/heroright.png"), url("./Assets/heroleft.png"),
     url("./Assets/heroclouds.png");
   background-repeat: no-repeat;
-  background-position: left 1400px bottom, right 1350px bottom, -400px -75px;
+  background-position: right -100px bottom, left -150px bottom, -400px -75px;
   background-size: auto, auto, auto;
 }
 
@@ -128,7 +128,32 @@
   .hero-container {
     justify-content: baseline;
     align-items: baseline;
-    background-position: left 1400px bottom, left -200px bottom, -400px bottom;
+    background-position: left 1400px bottom, left -170px bottom, -400px bottom;
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 699px) and (max-width: 1023px) {
+  .herodata {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    padding: 60px 0px 0px 20px;
+  }
+
+  .herodata p {
+    text-align: left;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .hero-container {
+    justify-content: baseline;
+    align-items: baseline;
+    background-position: right -20px bottom, left -2000000px bottom,
+      -400px bottom;
     height: 700px;
   }
 }
