@@ -1,0 +1,87 @@
+.contentarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  gap: 270px;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  min-width: 60%;
+}
+
+.sections img {
+  height: auto;
+  object-fit: contain;
+  width: 35vw;
+  min-width: 400px;
+}
+.sections .sectiondata {
+  max-width: 345px;
+  padding-top: 30px;
+  display: flex;
+  /* background-color: aqua; */
+  flex-direction: column;
+}
+
+.sections .sectiondata h1,
+.sections .sectiondata p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sections .sectiondata h1 {
+  font-size: 2.8em;
+  line-height: 1.2;
+  color: rgb(45, 44, 44);
+}
+
+.sections .sectiondata p {
+  line-height: 1.5;
+  margin-top: 30px;
+  font-size: 1.13em;
+}
+
+.readydownload {
+}
+
+.sectionslast {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionslast .sectiondatalast {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  max-width: 850px;
+  gap: 30px;
+}
+
+.sectionslast .sectiondatalast h1 {
+  font-size: clamp(20px, 4vw, 40px);
+  width: auto;
+  font-weight: 900;
+}
+
+.sectionslast .sectiondatalast p {
+  font-size: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  font-weight: 400;
+  width: 100%;
+}
+
+.sectionslast img {
+  height: auto;
+  object-fit: contain;
+  width: clamp(20px, 90vw, 1300px);
+}
