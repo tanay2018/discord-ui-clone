@@ -47,6 +47,33 @@
 }
 
 .readydownload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.readydownload button {
+  height: auto;
+  padding: 15px 35px;
+  background-color: #404eed;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  width: auto;
+  display: flex;
+  cursor: pointer;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.readydownload button:active {
+  transform: scale(0.98);
 }
 
 .sectionslast {
