@@ -1,1 +1,132 @@
-#23272a;
+.footer {
+  background-color: #23272a;
+  margin-top: 6vw;
+  padding: 60px 2vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  color: #fff;
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+}
+
+.footerinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footertop {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+  gap: 5vw;
+}
+
+.footerinfo h4 {
+  color: #5865f2;
+  font-weight: 800;
+  line-height: 95%;
+  text-transform: uppercase;
+  font-size: 32px;
+  width: 200px;
+}
+
+.footerlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4vw;
+}
+
+.footerlist .list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerlist .list h5 {
+  color: #5865f2;
+}
+
+.footerlist .list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerlist .list a:hover {
+  text-decoration: underline;
+}
+
+.footerbase img {
+  height: 40px;
+  width: 140px;
+}
+
+.footerbase .signup {
+  width: 90px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #5865f2;
+  border: none;
+  cursor: pointer;
+}
+
+.footerbase .signup:active {
+  transform: scale(0.98);
+}
+
+.footerbase {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin-top: 50px;
+}
+
+.line {
+  width: 70vw;
+  background-color: #5865f2;
+  height: 2px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 699px) and (max-width: 1023px) {
+  .footerlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+  }
+  .footerbase {
+    width: 85vw;
+  }
+  .footertop {
+    width: 85vw;
+  }
+  .line {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .footertop {
+    flex-direction: column;
+  }
+  .footerlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+  }
+  .footerbase {
+    width: 85vw;
+  }
+  .footertop {
+    width: 85vw;
+  }
+  .line {
+    width: 85vw;
+  }
+}

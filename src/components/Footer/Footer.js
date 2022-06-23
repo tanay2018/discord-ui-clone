@@ -4,6 +4,7 @@ import { BsTwitter } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -24,7 +25,7 @@ function Footer() {
             <a href="">
               <span>Download</span>
             </a>
-            <a>
+            <a href="">
               <span>Nitro</span>
             </a>
             <a href="">
@@ -36,7 +37,7 @@ function Footer() {
             <a href="">
               <span>About</span>
             </a>
-            <a>
+            <a href="">
               <span>Jobs</span>
             </a>
             <a href="">
@@ -75,7 +76,7 @@ function Footer() {
             <a href="">
               <span>Terms</span>
             </a>
-            <a>
+            <a href="">
               <span>Privacy</span>
             </a>
             <a href="">
